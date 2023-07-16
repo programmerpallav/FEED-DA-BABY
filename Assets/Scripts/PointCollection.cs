@@ -11,6 +11,7 @@ public class PointCollection : MonoBehaviour
     public AudioSource collectiblesSfx;
     public AudioSource obstaclesSfx;
     public AudioSource babyGiggle;
+    public AudioSource backgroundMusicfx;
 
     private void OnTriggerEnter(Collider collision)
     {
@@ -54,6 +55,8 @@ public class PointCollection : MonoBehaviour
         if (collision.gameObject.CompareTag("Child"))
         {
             babyGiggle.Play();
+            Destroy(collision.gameObject);
+            backgroundMusicfx.Stop();
         }
     }
 }

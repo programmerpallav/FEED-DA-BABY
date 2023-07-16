@@ -3,15 +3,14 @@ using UnityEngine;
 public class CollisionScript : MonoBehaviour
 {
     public GameObject levelComplete;
-    public GameObject GameOver;
     public GameObject ScoreUI;
     private void OnTriggerEnter(Collider other)
 
     {
 
-        if (other.tag == "Spoon" && gameObject.tag == "Items")
+       // if (other.tag == "Spoon" && gameObject.tag == "Items")
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
 
         if (other.tag == "Spoon" && gameObject.tag == "Child")

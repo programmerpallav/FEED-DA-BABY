@@ -10,16 +10,12 @@ public class SpoonMovement : MonoBehaviour
     [SerializeField]
     private float movementSpeed;
 
-    private void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
     {
 
-        if (Input.touchCount >0)
+        if (Input.touchCount > 0)
         {
             touch = Input.GetTouch(0);
 
@@ -28,6 +24,10 @@ public class SpoonMovement : MonoBehaviour
                 transform.position = new Vector3(transform.position.x + touch.deltaPosition.x * speed,
                 transform.position.y, transform.position.z);
 
+            }
+
+            if(touch.phase == TouchPhase.Led)
+            {
 
             }
 

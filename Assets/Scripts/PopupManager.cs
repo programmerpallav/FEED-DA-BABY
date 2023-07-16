@@ -20,6 +20,7 @@ public class PopupManager : MonoBehaviour
     public void NextLevel()
     {
         SceneManager.LoadScene("Level2");
+        Time.timeScale = 1f;
     }
 
     public void Restart()
