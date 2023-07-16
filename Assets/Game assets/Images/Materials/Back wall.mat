@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: KitchenFloor
+  m_Name: Back wall
   m_Shader: {fileID: 7, guid: 0000000000000000f000000000000000, type: 0}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -41,9 +41,9 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 1966829ce19234c9cada17d7d9a7cae0, type: 3}
-        m_Scale: {x: 0.95, y: 4.85}
-        m_Offset: {x: 0, y: -1.49}
+        m_Texture: {fileID: 2800000, guid: 325e12bb04ce24bc0978f845551fd697, type: 3}
+        m_Scale: {x: 0.73, y: 1.09}
+        m_Offset: {x: 0.12, y: -0.09}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}

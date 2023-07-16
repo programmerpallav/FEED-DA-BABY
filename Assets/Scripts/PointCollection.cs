@@ -4,6 +4,9 @@ using TMPro;
 public class PointCollection : MonoBehaviour
 {
     private int score;
+    public GameObject starOne;
+    public GameObject starTwo;
+    public GameObject starThree;
     public TextMeshProUGUI scoreText;
     public AudioSource collectiblesSfx;
     public AudioSource obstaclesSfx;
@@ -17,6 +20,27 @@ public class PointCollection : MonoBehaviour
             Destroy(collision.gameObject);
             score++;
             scoreText.text = score.ToString() + " " + "points";
+
+            if (score >= 1 && score <= 3)
+            {
+                starOne.SetActive(false);
+                starTwo.SetActive(true);
+                starThree.SetActive(false);
+            }
+
+            if (score > 3 && score <= 5)
+            {
+                starOne.SetActive(true);
+                starTwo.SetActive(true);
+                starThree.SetActive(false);
+            }
+
+            if (score > 5 && score <= 10)
+            {
+                starOne.SetActive(true);
+                starTwo.SetActive(true);
+                starThree.SetActive(true);
+            }
         }
 
         if (collision.gameObject.CompareTag("Obstacle"))
