@@ -29,14 +29,14 @@ public class PointCollection : MonoBehaviour
                 starThree.SetActive(false);
             }
 
-            if (score > 3 && score <= 5)
+            if (score > 3 && score <= 7)
             {
                 starOne.SetActive(true);
                 starTwo.SetActive(true);
                 starThree.SetActive(false);
             }
 
-            if (score > 5 && score <= 10)
+            if (score > 7 && score <= 10)
             {
                 starOne.SetActive(true);
                 starTwo.SetActive(true);
