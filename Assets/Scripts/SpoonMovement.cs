@@ -26,10 +26,6 @@ public class SpoonMovement : MonoBehaviour
 
             }
 
-            if(touch.phase == TouchPhase.Led)
-            {
-
-            }
 
         }
         transform.Translate(0, 0, 1 * movementSpeed * Time.deltaTime);
