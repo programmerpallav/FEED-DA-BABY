@@ -13,7 +13,7 @@ public class CollisionScript : MonoBehaviour
             //Destroy(gameObject);
         }
 
-        if (other.tag == "Spoon" && gameObject.tag == "Child")
+        if (other.tag == "Player" && gameObject.tag == "Child")
         {
             levelComplete.SetActive(true);
             ScoreUI.SetActive(false);
