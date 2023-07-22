@@ -5,13 +5,21 @@ using UnityEngine.SceneManagement;
 
 public class NavigationScript : MonoBehaviour
 {
- public void PlayButton()
+    public GameObject firstLevelStory;
+
+    public void PlayButton()
+
+    {
+        firstLevelStory.SetActive(true);
+    }
+
+    public void StoryPlayButton()
 
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
- public void Level2Button()
+    public void Level2Button()
     {
         SceneManager.LoadScene(2);
     }

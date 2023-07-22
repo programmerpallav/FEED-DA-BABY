@@ -9,6 +9,7 @@ public class SpoonMovement : MonoBehaviour
     private Touch touch;
     [SerializeField]
     private float movementSpeed;
+    
 
 
     // Update is called once per frame
@@ -23,7 +24,6 @@ public class SpoonMovement : MonoBehaviour
             {
                 transform.position = new Vector3(transform.position.x + touch.deltaPosition.x * speed,
                 transform.position.y, transform.position.z);
-
             }
 
 
