@@ -980,7 +980,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.38, y: 0.4, z: 0.25}
+  m_Size: {x: 0.26, y: 0.28, z: 0.25}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1174967780
 MonoBehaviour:
@@ -1127,7 +1127,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.38, y: 0.34, z: 0.07}
+  m_Size: {x: 0.29, y: 0.31, z: 0.07}
   m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!4 &1410332055
 Transform:
@@ -1304,7 +1304,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.38, y: 0.4, z: 0.25}
+  m_Size: {x: 0.26, y: 0.28, z: 0.25}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1636173135
 Transform:
@@ -1516,8 +1516,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.034, y: 0.012, z: 0.04}
-  m_Center: {x: -0.017, y: 0.003, z: -0.016}
+  m_Size: {x: 0.033, y: 0.016, z: 0.035}
+  m_Center: {x: -0.017, y: 0.005, z: -0.014}
 --- !u!114 &1948566906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5116,6 +5116,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8690588101155373568, guid: c62194d341aa24cf2a1d2ed96a818005, type: 3}
+      propertyPath: m_Size.x
+      value: 0.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 8690588101155373568, guid: c62194d341aa24cf2a1d2ed96a818005, type: 3}
+      propertyPath: m_Size.y
+      value: 0.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 8690588101155373568, guid: c62194d341aa24cf2a1d2ed96a818005, type: 3}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8690588101155373569, guid: c62194d341aa24cf2a1d2ed96a818005, type: 3}
       propertyPath: m_RootOrder
       value: 7
