@@ -5,27 +5,24 @@ using UnityEngine.SceneManagement;
 
 public class PopupManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public GameObject secondLevelStory;
 
     public void NextLevel()
     {
-        SceneManager.LoadScene("Level2");
+        secondLevelStory.SetActive(true);
+    }
+
+    public void StoryPlayButton()
+
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         Time.timeScale = 1f;
     }
 
     public void Restart()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        string currentSceneName = SceneManager.GetActiveScene().name;
+        SceneManager.LoadScene(currentSceneName);
         Time.timeScale = 1f;
     }
 
