@@ -1626,6 +1626,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   secondLevelStory: {fileID: 916826491774620696, guid: 64c42a133601d47688d3372dee554907, type: 3}
   thirdLevelStory: {fileID: 1941127081}
+  fourthLevelStory: {fileID: 4163277046248390148, guid: 5eeeee77874b34f4992a2f3983c20446, type: 3}
 --- !u!1001 &901021714
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1648,6 +1649,10 @@ PrefabInstance:
     - target: {fileID: 3225946273762644243, guid: 14628e023fa84432ebc110fc8556f4ec, type: 3}
       propertyPath: m_Name
       value: Third Level Story
+      objectReference: {fileID: 0}
+    - target: {fileID: 3225946273762644243, guid: 14628e023fa84432ebc110fc8556f4ec, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3225946273762644247, guid: 14628e023fa84432ebc110fc8556f4ec, type: 3}
       propertyPath: m_Pivot.x

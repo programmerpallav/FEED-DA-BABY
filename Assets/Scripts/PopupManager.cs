@@ -7,6 +7,7 @@ public class PopupManager : MonoBehaviour
 {
     public GameObject secondLevelStory;
     public GameObject thirdLevelStory;
+    public GameObject fourthLevelStory;
 
     public void StoryPlayButton()
     {
@@ -28,6 +29,7 @@ public class PopupManager : MonoBehaviour
     {
         secondLevelStory.SetActive(true);
         thirdLevelStory.SetActive(true);
+        fourthLevelStory.SetActive(true);
     }
 
 

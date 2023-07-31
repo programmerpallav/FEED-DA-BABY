@@ -1123,6 +1123,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: First Level Story
       objectReference: {fileID: 0}
+    - target: {fileID: 5149621578835387118, guid: b23e4cbf878af44cf9ff0df09bde1a86, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b23e4cbf878af44cf9ff0df09bde1a86, type: 3}
 --- !u!1 &732872494
