@@ -1,7 +1,7 @@
 using UnityEngine;
 using TMPro;
 
-public class PointCollectionLvl3 : MonoBehaviour
+public class PointCollectionLvl4 : MonoBehaviour
 {
     private int score;
     public GameObject starOne;

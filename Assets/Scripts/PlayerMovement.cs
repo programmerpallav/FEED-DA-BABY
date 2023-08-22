@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField]
-    private float speed = 0.01f;
+    public float speed = 0.01f;
+    public float accX = 2f;
     private Touch touch;
-    [SerializeField]
-    private float movementSpeed;
+    public float movementSpeed;
+    public float rotationSpeed;
     private float minX; 
     private float maxX;
+    private float currentVelocity = 0f;
 
 
 
@@ -24,10 +25,14 @@ public class PlayerMovement : MonoBehaviour
 
             if(touch.phase == TouchPhase.Moved)
             {
+                currentVelocity += touch.deltaPosition.x * accX * Time.deltaTime;
+
                 transform.position = new Vector3(transform.position.x + touch.deltaPosition.x * speed,
                 transform.position.y, transform.position.z);
 
-                float newX = transform.position.x + touch.deltaPosition.x * speed;
+                transform.Rotate(0f, 0f, touch.deltaPosition.x * -1 * rotationSpeed);
+
+                float newX = transform.position.x + currentVelocity * speed * Time.deltaTime;
 
                 float clampedX = Mathf.Clamp(newX, -3.5f, 5.4f);
                 transform.position = new Vector3(clampedX, transform.position.y, transform.position.z);
@@ -38,4 +43,7 @@ public class PlayerMovement : MonoBehaviour
         transform.Translate(0, 0, 1 * movementSpeed * Time.deltaTime);
 
     }
+
+    //rotate plane on z axis.
+    //when drag left, it rotates anticlockwise. when drag right, it rotates clockwise.
 }

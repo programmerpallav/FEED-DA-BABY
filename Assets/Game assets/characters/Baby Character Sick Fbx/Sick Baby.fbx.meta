@@ -1,9 +1,39 @@
 fileFormatVersion: 2
-guid: 68d8aa81eb06940de9b523a0413ad120
+guid: 1451791d5201e4e5fa35d06e10ac8fb8
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert2
+    second: {fileID: 2100000, guid: e792c30236ae44549a7571af202544d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert3
+    second: {fileID: 2100000, guid: a1f10f95430114a86a4baf2b580d5f7f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__lambert3
+    second: {fileID: 2100000, guid: b8a80fa0978904ccfa9a1291ccdce39f, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Baby Sick@2x
+    second: {fileID: 2800000, guid: ed47067d4761246a7960f96895abbcf0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: baby smiling@2x
+    second: {fileID: 2800000, guid: a8953492d9a1249a69a1b1bef2e4c17a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: baby smiling@2x.
+    second: {fileID: 2800000, guid: 62ec0b6dbbaff4015bc9b3512be306ea, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
